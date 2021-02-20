@@ -19,7 +19,7 @@ def api():
     print('q=', q)
     data = my_text.check_tf(q)
     label, per, n = data
-    return json.dumps({'LABELS': label, 'predeict': per, 'no': n})
+    return json.dumps({'LABELS': label, 'predict': per, 'no': n})
     
     
 if __name__=='__main__':
